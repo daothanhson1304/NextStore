@@ -9,10 +9,6 @@ import {
 import { SlidersHorizontal, ChevronDown } from 'lucide-react';
 import { Metadata } from 'next';
 
-interface CollectionDetailProps {
-  params: { slug: string };
-}
-
 export const metadata: Metadata = {
   title: 'Collections | House of blanks',
   description: 'Browse our collections',
@@ -20,8 +16,10 @@ export const metadata: Metadata = {
 
 export default async function CollectionDetailPage({
   params,
-}: CollectionDetailProps) {
-  const { slug } = params;
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
   // Gọi API
   const res = await fetch(`http://localhost:3000/api/collections`, {

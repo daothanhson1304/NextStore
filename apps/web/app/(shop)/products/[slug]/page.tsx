@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   description: 'Browse our products',
 };
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   return <ProductDetail />;
 }
