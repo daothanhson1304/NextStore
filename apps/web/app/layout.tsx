@@ -4,6 +4,7 @@ import '@workspace/ui/globals.css';
 import { Providers } from '@/components/providers';
 import Header from '@/components/shared/header';
 import Footer from '@/components/shared/footer';
+import Breadcrumb from '@/components/shared/breadcrumb';
 
 const fontSans = Geist({
   subsets: ['latin'],
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased `}
+        className={`${fontSans.variable} ${fontMono.variable} font-mono tracking-tight antialiased `}
       >
         <Providers>
           <Header />

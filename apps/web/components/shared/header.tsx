@@ -1,37 +1,46 @@
 import { ROUTE_PATHS } from '@/constants';
 import Link from 'next/link';
 import { AnnouncementBar } from '../landing/announcement-bar';
+import { MenuDrawer } from './menu-drawer';
+import CartDrawer from './cart-drawer';
 
 export default function Header() {
   return (
     <>
       <AnnouncementBar />
-      <header className='max-w-page mx-auto py-8 flex items-center justify-between'>
-        <nav>
-          <ul className='flex items-center gap-4'>
-            <li>
-              <Link href={ROUTE_PATHS.HOME}>Shop</Link>
-            </li>
-            <li>
-              <Link href={ROUTE_PATHS.ABOUT}>About</Link>
-            </li>
-            <li>
-              <Link href={ROUTE_PATHS.WHOLSALE}>Wholesale</Link>
-            </li>
-          </ul>
-        </nav>
-        <Link href={ROUTE_PATHS.HOME}>
-          <h1 className='text-2xl font-bold'>House of blanks</h1>
-        </Link>
-        <div className='flex items-center gap-4'>
-          <Link href={ROUTE_PATHS.LOGIN}>
-            <span>Account</span>
+      <div className='w-full bg-background sticky top-0 z-50'>
+        <header className='max-w-screen-xl mx-auto py-8 flex items-center justify-between text-sm font-mono tracking-tight'>
+          {/* Left menu */}
+          <nav className='flex items-center gap-6'>
+            <MenuDrawer />
+            <Link href='/about' className='hover:underline'>
+              About
+            </Link>
+            <Link href='/wholesale' className='hover:underline'>
+              Wholesale
+            </Link>
+          </nav>
+
+          {/* Center logo */}
+          <Link
+            href={ROUTE_PATHS.HOME}
+            className='text-2xl font-semibold cursor-pointer'
+          >
+            HOUSE OF BLANKS
           </Link>
-          <Link href={ROUTE_PATHS.CART}>
-            <span>Cart</span>
-          </Link>
-        </div>
-      </header>
+
+          {/* Right menu */}
+          <div className='flex items-center gap-6'>
+            <Link href='/search' className='hover:underline'>
+              Search
+            </Link>
+            <Link href='/account' className='hover:underline'>
+              Account
+            </Link>
+            <CartDrawer />
+          </div>
+        </header>
+      </div>
     </>
   );
 }

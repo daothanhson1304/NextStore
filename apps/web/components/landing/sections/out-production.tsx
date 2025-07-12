@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function OurProductionSection() {
   return (
     <section className='bg-primary px-6 py-12'>
-      <div className='max-w-page mx-auto'>
+      <div className='max-w-screen-xl mx-auto'>
         <h2 className='text-2xl md:text-3xl font-mono font-semibold tracking-widest mb-10'>
           OUR PRODUCTION<span className='ml-1'>_</span>
         </h2>

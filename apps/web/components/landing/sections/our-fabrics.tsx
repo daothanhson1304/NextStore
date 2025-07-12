@@ -10,7 +10,7 @@ export default function OurFabricsSection() {
         className='object-cover brightness-75'
         priority
       />
-      <div className='max-w-page mx-auto relative z-10  py-10 md:py-20'>
+      <div className='max-w-screen-xl mx-auto relative z-10  py-10 md:py-20'>
         <h2 className='text-2xl md:text-4xl font-mono font-semibold mb-4'>
           OUR FABRICS
         </h2>

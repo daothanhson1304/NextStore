@@ -43,6 +43,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   --page-width: 1350px;
   --primary: #ded8cf;
+  --secondary-foreground: #42291799;
 }
 
 .dark {

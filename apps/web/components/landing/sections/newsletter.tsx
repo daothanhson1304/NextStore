@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function NewsletterSection() {
   return (
     <section className='w-full bg-primary py-16 px-8'>
-      <div className='max-w-page mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
+      <div className='max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
         {/* Left - Form */}
         <div className='space-y-6'>
           <h2 className='text-xl tracking-widest font-medium uppercase'>

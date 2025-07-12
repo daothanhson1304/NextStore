@@ -4,4 +4,5 @@ export const ROUTE_PATHS = {
   WHOLSALE: '/wholesale',
   LOGIN: '/account/login',
   CART: '/cart',
+  PRODUCTS: '/products',
 };

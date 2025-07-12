@@ -1,18 +1,18 @@
 import {
   BannerSection,
-  NewProducts,
   OutProduction,
   NewsletterSection,
   OurFabrics,
 } from './sections';
+import ProductsSection from '@/components/shared/product-section';
 
 export default function MainContent() {
   return (
     <main>
       <BannerSection />
-      <NewProducts />
+      <ProductsSection title='NEW ITEMS' />
       <OutProduction />
-      <NewProducts />
+      <ProductsSection title='CANADIAN MADE FLEECE' />
       <NewsletterSection />
       <OurFabrics />
     </main>

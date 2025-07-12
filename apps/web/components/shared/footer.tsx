@@ -4,8 +4,8 @@ import { Button } from '@workspace/ui/components/button';
 
 export default function Footer() {
   return (
-    <footer className='bg-white text-sm font-mono border-t border-black/40'>
-      <div className='max-w-page mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+    <footer className='bg-white text-sm'>
+      <div className='max-w-screen-xl mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
         {/* Column 1 */}
         <div>
           <h2 className='text-xl font-bold tracking-tight'>HOUSE OF BLANKS</h2>
@@ -57,9 +57,10 @@ export default function Footer() {
             Join our newsletter to stay up to date on features and releases.
           </h3>
           <div className='mt-4 flex items-center gap-2 border-b pb-1 w-full max-w-md'>
-            <Input
+            <input
+              type='email'
               placeholder='Enter your email'
-              className='border-none focus-visible:ring-0 px-0'
+              className='flex-1 bg-transparent border-none outline-none py-2 placeholder:text-gray-600'
             />
             <Button
               variant='ghost'
@@ -82,7 +83,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom */}
-      <div className='max-w-page mx-auto'>
+      <div className='max-w-screen-xl mx-auto'>
         <div className='border-t border-black/20 text-muted-foreground text-xs py-4 flex flex-col md:flex-row justify-between items-center gap-2 '>
           <p>© 2025 House Of Blanks. All Rights Reserved</p>
           <div className='flex gap-4'>

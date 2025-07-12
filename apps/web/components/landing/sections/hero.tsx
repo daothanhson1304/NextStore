@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className='relative bg-[#f6f6f6] font-mono'>
+    <section className='relative'>
       {/* Main Image */}
       <div className='relative mx-auto w-full max-w-screen-xl'>
         <div className='relative aspect-[16/9] overflow-hidden '>
@@ -33,7 +33,7 @@ export default function HeroSection() {
       </div>
 
       {/* Caption */}
-      <div className='max-w-screen-xl mx-auto px-4 md:px-8 py-6'>
+      <div className='max-w-screen-xl mx-auto  py-6'>
         <h2 className='text-3xl font-bold tracking-wide'>SUMMER SALE</h2>
         <p className='mt-2 text-sm text-muted-foreground'>
           Our favourite styles and colours are now up to 50% off for our Summer
