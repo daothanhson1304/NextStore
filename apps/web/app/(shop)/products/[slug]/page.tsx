@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { ProductDetail } from './components/product-detail';
 
 export const metadata: Metadata = {
-  title: 'Products | House of blanks',
+  title: 'Products | Happy Paw',
   description: 'Browse our products',
 };
 

@@ -4,14 +4,14 @@ import { Button } from '@workspace/ui/components/button';
 
 export default function Footer() {
   return (
-    <footer className='bg-white text-sm'>
+    <footer className='bg-primary text-sm'>
       <div className='max-w-screen-xl mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
         {/* Column 1 */}
         <div>
-          <h2 className='text-xl font-bold tracking-tight'>HOUSE OF BLANKS</h2>
+          <h2 className='text-xl font-bold tracking-tight'>Happy Paw</h2>
           <p className='mt-2 text-sm leading-relaxed text-muted-foreground'>
-            House of Blanks is a factory brand produced by Roopa Knitting Mills,
-            the makers of the world's highest quality knit fabrics and apparel.
+            Happy Paw is a factory brand produced by Roopa Knitting Mills, the
+            makers of the world's highest quality knit fabrics and apparel.
           </p>
           <div className='mt-4'>
             <h3 className='font-semibold'>Social</h3>
@@ -85,7 +85,7 @@ export default function Footer() {
       {/* Bottom */}
       <div className='max-w-screen-xl mx-auto'>
         <div className='border-t border-black/20 text-muted-foreground text-xs py-4 flex flex-col md:flex-row justify-between items-center gap-2 '>
-          <p>© 2025 House Of Blanks. All Rights Reserved</p>
+          <p>© 2025 Happy Paw. All Rights Reserved</p>
           <div className='flex gap-4'>
             <a href='#' className='underline'>
               Terms of Service

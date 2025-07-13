@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Collections | House of blanks',
+  title: 'Collections | Happy Paw',
   description: 'Browse our collections',
 };
 

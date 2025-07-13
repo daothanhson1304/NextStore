@@ -10,7 +10,7 @@ import { SlidersHorizontal, ChevronDown } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Collections | House of blanks',
+  title: 'Collections | Happy Paw',
   description: 'Browse our collections',
 };
 

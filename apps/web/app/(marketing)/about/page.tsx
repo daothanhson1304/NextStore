@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'About Us | House of blanks',
+  title: 'About Us | Happy Paw',
   description: 'Learn more about our company, mission, and values.',
 };
 

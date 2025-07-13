@@ -23,7 +23,7 @@ export function MenuDrawer() {
         </DrawerTitle>
       </DrawerTrigger>
 
-      <DrawerContent className='bg-secondary-foreground backdrop-blur-sm text-white px-8 py-10 w-[320px] !border-r-0'>
+      <DrawerContent className='bg-primary backdrop-blur-sm text-foreground px-8 py-10 w-[320px] !border-r-0'>
         <div className='space-y-10'>
           {/* FEATURED */}
           <div>
@@ -65,88 +65,101 @@ export function MenuDrawer() {
             <ul className='space-y-2 ml-4'>
               <li>
                 <DrawerClose asChild>
-                  <Link href='/collections' className='hover:underline block'>
-                    All categories
+                  <Link
+                    href='/collections/pet-food'
+                    className='hover:underline block'
+                  >
+                    Pet Food
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/t-shirts'
+                    href='/collections/feeding-supplies'
                     className='hover:underline block'
                   >
-                    T-shirts
+                    Feeding & Watering Supplies
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/sweatshirts'
+                    href='/collections/toys'
                     className='hover:underline block'
                   >
-                    Sweatshirts
+                    Toys
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/hoodies'
+                    href='/collections/beds-furniture'
                     className='hover:underline block'
                   >
-                    Hoodies
+                    Beds & Furniture
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/crewnecks'
+                    href='/collections/collars-leashes'
                     className='hover:underline block'
                   >
-                    Crewnecks
+                    Collars, Leashes & Harnesses
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/zip-sweatshirts'
+                    href='/collections/pet-apparel'
                     className='hover:underline block'
                   >
-                    Zip Sweatshirts
+                    Pet Apparel
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/sweatpants'
+                    href='/collections/grooming-supplies'
                     className='hover:underline block'
                   >
-                    Sweatpants
+                    Grooming Supplies
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/shorts'
+                    href='/collections/health-wellness'
                     className='hover:underline block'
                   >
-                    Shorts
+                    Health & Wellness
                   </Link>
                 </DrawerClose>
               </li>
               <li>
                 <DrawerClose asChild>
                   <Link
-                    href='/collections/headwear'
+                    href='/collections/litter-housebreaking'
                     className='hover:underline block'
                   >
-                    Headwear
+                    Litter & Housebreaking
+                  </Link>
+                </DrawerClose>
+              </li>
+              <li>
+                <DrawerClose asChild>
+                  <Link
+                    href='/collections/travel-outdoor'
+                    className='hover:underline block'
+                  >
+                    Travel & Outdoor
                   </Link>
                 </DrawerClose>
               </li>

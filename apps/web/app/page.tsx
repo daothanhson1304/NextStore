@@ -11,6 +11,6 @@ export default function Page() {
 }
 
 export const metadata: Metadata = {
-  title: 'House of blanks - Home',
-  description: 'Welcome to the house of blanks',
+  title: 'Happy Paw - Pet shop & Care',
+  description: 'Welcome to the Happy Paw',
 };

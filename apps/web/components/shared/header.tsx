@@ -16,17 +16,17 @@ export default function Header() {
             <Link href='/about' className='hover:underline'>
               About
             </Link>
-            <Link href='/wholesale' className='hover:underline'>
-              Wholesale
+            <Link href='/collections' className='hover:underline'>
+              Categories
             </Link>
           </nav>
 
           {/* Center logo */}
           <Link
             href={ROUTE_PATHS.HOME}
-            className='text-2xl font-semibold cursor-pointer'
+            className='text-2xl font-semibold cursor-pointer text-brand'
           >
-            HOUSE OF BLANKS
+            Happy Paw
           </Link>
 
           {/* Right menu */}
