@@ -14,10 +14,10 @@ export default function CartDrawer() {
   return (
     <Drawer direction='right'>
       <DrawerTrigger asChild>
-        <DrawerTitle className='text-sm font-mono tracking-tight cursor-pointer relative'>
+        <DrawerTitle className='font-mono tracking-tight cursor-pointer relative'>
           Cart
           {/* Cart Badge */}
-          <span className='absolute -top-2 -right-3 inline-flex items-center justify-center text-xs bg-black text-white rounded-full w-5 h-5'>
+          <span className='absolute -top-2 -right-3 inline-flex items-center justify-center text-xs bg-brand text-white rounded-full w-5 h-5'>
             1
           </span>
         </DrawerTitle>

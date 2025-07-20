@@ -1,4 +1,3 @@
 export { default as BannerSection } from './hero';
-export { default as OutProduction } from './out-production';
-export { default as NewsletterSection } from './newsletter';
-export { default as OurFabrics } from './our-fabrics';
+export { default as NewArrivals } from './new-arrivals';
+export { default as AboutSection } from './about';

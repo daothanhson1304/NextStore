@@ -13,6 +13,11 @@ const nextConfig = {
         hostname: 'www.houseofblanks.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'e-c.storage.googleapis.com',
+        pathname: '/**',
+      },
     ],
   },
 };

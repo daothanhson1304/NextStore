@@ -18,8 +18,8 @@ export function MenuDrawer() {
   return (
     <Drawer open={isOpen} onOpenChange={setIsOpen} direction='left'>
       <DrawerTrigger asChild>
-        <DrawerTitle className='text-sm font-mono tracking-tight cursor-pointer'>
-          Shop
+        <DrawerTitle className='font-mono tracking-tight cursor-pointer'>
+          Paws
         </DrawerTitle>
       </DrawerTrigger>
 

@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Baloo_2 } from 'next/font/google';
 
 import '@workspace/ui/globals.css';
 import { Providers } from '@/components/providers';
@@ -6,12 +6,12 @@ import Header from '@/components/shared/header';
 import Footer from '@/components/shared/footer';
 import Breadcrumb from '@/components/shared/breadcrumb';
 
-const fontSans = Geist({
+const fontSans = Baloo_2({
   subsets: ['latin'],
   variable: '--font-sans',
 });
 
-const fontMono = Geist_Mono({
+const fontMono = Baloo_2({
   subsets: ['latin'],
   variable: '--font-mono',
 });

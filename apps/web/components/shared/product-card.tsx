@@ -1,6 +1,7 @@
 'use client';
 
 import { Badge } from '@workspace/ui/components/badge';
+import { Button } from '@workspace/ui/components/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -19,7 +20,7 @@ type Product = {
 
 export default function ProductCard({ product }: { product: Product }) {
   const [isHovered, setIsHovered] = useState(false);
-  console.log('isHovered', isHovered);
+
   return (
     <div className='space-y-3'>
       {/* Image & Tag */}
@@ -42,44 +43,26 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         </Link>
         {((product.discount && !isHovered) || product.sizes.length === 0) && (
-          <Badge className='absolute bottom-2 right-2 bg-muted-foreground text-white rounded-full px-2 text-xs font-mono tracking-wide'>
+          <Badge className='absolute bottom-2 right-2 bg-brand text-white rounded-full px-2 text-xs font-mono tracking-wide'>
             {product.discount}
           </Badge>
-        )}
-        {product.sizes.length > 0 && isHovered && (
-          <div className='absolute bottom-2 left-1/2 -translate-x-1/2 flex justify-center items-center gap-3 rounded-full bg-gray-100 px-2 py-1 text-xs font-mono text-muted-foreground'>
-            {product.sizes.map(size => (
-              <span key={size}>{size}</span>
-            ))}
-          </div>
         )}
       </div>
 
       {/* Name & material */}
       <Link href={`/products/${product.id}`}>
-        <div className='text-sm'>
-          <h3 className='font-semibold'>{product.name}</h3>
-          <p className='text-xs text-muted-foreground'>{product.material}</p>
-        </div>
+        <h3 className='font-semibold text-xl'>{product.name}</h3>
       </Link>
 
       {/* Price */}
-      <div className='flex items-center gap-2 text-sm'>
+      <div className='flex items-center gap-2 text-lg mt-2'>
         <span className='line-through text-muted-foreground'>
           ${product.comparePrice}
         </span>
-        <span className='font-medium'>${product.price}</span>
-      </div>
-
-      {/* Colors */}
-      <div className='flex items-center gap-1 mt-1'>
-        {product.colors.map((color, i) => (
-          <div
-            key={i}
-            className='w-4 h-4 border border-gray-400 rounded-sm'
-            style={{ backgroundColor: color }}
-          />
-        ))}
+        <span className='font-medium text-brand'>${product.price}</span>
+        <Button className='bg-sky-100 text-sky-700 font-bold px-4 py-2 rounded-full'>
+          Add to Cart
+        </Button>
       </div>
     </div>
   );

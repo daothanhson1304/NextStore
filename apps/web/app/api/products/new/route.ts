@@ -9,7 +9,7 @@ export async function GET(request: Request) {
       comparePrice: 35,
       discount: '10% OFF',
       image:
-        'https://www.houseofblanks.com/cdn/shop/files/1016OversizedBoxyT-Shirt_Black_01.jpg?v=1749667307&width=533',
+        'https://e-c.storage.googleapis.com/res/1b6ffe86-061b-4f1d-a033-1329e607f054/480',
       colors: ['#000000', '#FFFFFF'],
       sizes: [],
     },
@@ -21,7 +21,7 @@ export async function GET(request: Request) {
       comparePrice: 35,
       discount: '10% OFF',
       image:
-        'https://www.houseofblanks.com/cdn/shop/files/1016OversizedBoxyT-Shirt_White_01.jpg?v=1749667530&width=533',
+        'https://e-c.storage.googleapis.com/res/76fe7688-0293-474b-afd7-a1397651eb90/480',
       colors: ['#000000', '#FFFFFF'],
       sizes: [],
     },
@@ -33,7 +33,7 @@ export async function GET(request: Request) {
       comparePrice: 35,
       discount: '',
       image:
-        'https://www.houseofblanks.com/cdn/shop/files/1017SlubPocketT-Shirt_Black_01.jpg?v=1749668273&width=533',
+        'https://e-c.storage.googleapis.com/res/3a3ef7cf-ce57-4ae4-b99c-dea50f3fabce/480',
       colors: ['#000000', '#FFFFFF'],
       sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     },
@@ -45,7 +45,7 @@ export async function GET(request: Request) {
       comparePrice: 35,
       discount: '10% OFF',
       image:
-        'https://www.houseofblanks.com/cdn/shop/files/1017SlubPocketT-Shirt_White_01.jpg?v=1749668038&width=533',
+        'https://e-c.storage.googleapis.com/res/3818ef72-c8ed-4c59-8902-2a283c46bc65/480',
       colors: ['#FFFFFF', '#000000'],
       sizes: [],
     },
